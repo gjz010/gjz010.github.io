@@ -2,7 +2,7 @@ body {
 	margin-top: 20px;
 	margin: 0;
 	padding: 0;
-	background: #C0F3FD url(images/img01.gif) repeat-x left top;
+	background: #C0F3FD url(/images/img01.gif) repeat-x left top;
 	font-size: 11px;
 	text-align: justify;
 	color: #1F1F1F;
@@ -60,7 +60,7 @@ hr {
 #wrapper {
 	margin: 0;
 	padding: 0;
-	background: #C0F3FD url(images/img02.jpg) repeat-x left top;
+	background: #C0F3FD url(/images/img02.jpg) repeat-x left top;
 }
 
 
@@ -72,7 +72,7 @@ hr {
 	margin: 0 auto;
 	padding: 50px 0 0 0;
 	font-family: "Trebuchet MS", "Times New Roman", Arial, Times, serif;
-	background: url(images/img04.jpg) no-repeat left 20%;
+	background: url(/images/img04.jpg) no-repeat left 20%;
 }
 
 #header h1, #header p {
@@ -105,7 +105,7 @@ hr {
 	padding: 0;
 	width: 800px;
 	height: 250px;
-	background: url(images/img01.jpg) no-repeat left top;
+	background: url(/images/img01.jpg) no-repeat left top;
 }
 
 /* Page */
@@ -226,15 +226,15 @@ hr {
 #sidebar .btm {
 	margin: 0;
 	padding: 0;
-	background: url(images/img07.gif) no-repeat left bottom;
+	background: url(/images/img07.gif) no-repeat left bottom;
 }
 
 #sidebar .top {
-	background: url(images/img05.gif) no-repeat left top;
+	background: url(/images/img05.gif) no-repeat left top;
 }
 
 #sidebar .wrap {
-	background: url(images/img06.GIF) repeat-y left top;
+	background: url(/images/img06.GIF) repeat-y left top;
 }
 
 #sidebar ul {
@@ -264,7 +264,7 @@ hr {
 	padding-left: 40px;
 	height: 35px;
 	font-size: 18px;
-	background: url(images/img08.gif) no-repeat left top;
+	background: url(/images/img08.gif) no-repeat left top;
 }
 
 #sidebar a {
@@ -323,7 +323,7 @@ hr {
 #footer {
 	width: auto;
 	height: 118px;
-	background: url(images/img03.gif) repeat-x left top;
+	background: url(/images/img03.gif) repeat-x left top;
 	text-align: center;
 	font-size: 10px;
 	font-family: Arial, Helvetica, sans-serif;
