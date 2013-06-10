@@ -92,10 +92,10 @@ var jiathis_config={
 						<li>
 							<h2>文章分类</h2>
 							<ul>
-    {\% for category in site.categories %\}
+    {% for category in site.categories %}
     <li><a href="/categories/{\{ category | first }\}/" title="查看所有文章">{\{ category | first }\} {\{ category | last | size }\}</a>
     </li>
-    {\% endfor %\}
+    {% endfor %}
 							</ul>
 						</li>
 							<h2>分享</h2><ul>
