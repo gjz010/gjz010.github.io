@@ -5,8 +5,11 @@ title: 主页
 <h2>{{ page.title }}</h2>
 <h2>最新文章</h2>
 <ul>
-　　{% for post in site.posts %}
-　　　　<h3><li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li></h3>
+　　{% for tag in site.tags %}
+　　    <h3>{{tag}}</h3>
+　　    {%for post in site.tags.{tag}%}
+　　　　<h4><li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li></h4>
+　　    {% endfor %}
 　　{% endfor %}
 </ul>
 
