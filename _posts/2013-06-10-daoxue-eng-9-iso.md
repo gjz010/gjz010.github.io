@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 导学与训练九年级听力下载
+category: 资料下载
 ---
 {{ page.title }}
 ----------
