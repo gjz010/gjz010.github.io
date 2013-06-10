@@ -6,8 +6,8 @@ title: 主页
 <h2>最新文章</h2>
 <ul>
 　　{% for tag in site.tags %}
-　　    <h3>{{tag}}</h3>
-　　    {%for post in site.tags.{tag}%}
+　　    <h3>{{tag[0]}}</h3>
+　　    {%for post in tag[1]%}
 　　　　<h4><li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li></h4>
 　　    {% endfor %}
 　　{% endfor %}
