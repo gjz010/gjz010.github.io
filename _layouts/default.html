@@ -88,6 +88,16 @@ var jiathis_config={
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 						</li>
 						<li>
+
+						<li>
+							<h2>文章分类</h2>
+							<ul>
+    {\% for category in site.categories %\}
+    <li><a href="/categories/{\{ category | first }\}/" title="查看所有文章">{\{ category | first }\} {\{ category | last | size }\}</a>
+    </li>
+    {\% endfor %\}
+							</ul>
+						</li>
 							<h2>分享</h2><ul>
 
 <!-- JiaThis Button BEGIN -->
@@ -129,24 +139,6 @@ var jiathis_config={
 <!-- JiaThis Button END -->
 
 
-						</li>
-						
-						
-						
-						
-						
-						
-						<br>
-						<li>
-							<h2>Archives</h2>
-							<ul>
-								<li><a href="#">September</a> (23)</li>
-								<li><a href="#">August</a> (31)</li>
-								<li><a href="#">July</a> (31)</li>
-								<li><a href="#">June</a> (30)</li>
-								<li><a href="#">May</a> (31)</li>
-								<li><a href="#">April</a> (30)</li>
-							</ul>
 						</li>
 					</ul>
 				</div>
