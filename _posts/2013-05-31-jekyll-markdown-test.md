@@ -2,8 +2,6 @@
 layout: default
 title: Jekyll Markdown测试
 ---
-{{ page.title }}
-----------
 #####中考
 就要来了。
 ####加油，
