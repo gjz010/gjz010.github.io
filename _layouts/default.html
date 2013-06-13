@@ -91,6 +91,11 @@ var jiathis_config={
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 						</li>
 						<li>
+							<h2>标签一览</h2>
+{% for tag in site.tags %}
+<a href="/#"{{tag[0]}}><h2>{{tag[0]}}</h2></a>
+{% endfor %}
+						</li>
 					</ul>
 				</div>
 				</div>
