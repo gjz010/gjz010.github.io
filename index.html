@@ -4,8 +4,8 @@ title: 主页
 ---
 <div id="content">
 {% for tag in site.tags %}
-<h2>{{tag[0]}}</h2>
 <a name={{tag[0]}}></a>
+<h2>{{tag[0]}}</h2>
 {%for post in tag[1]%}
   <div class="post">
       <h1 class="title">{{ post.title }}</h1>
