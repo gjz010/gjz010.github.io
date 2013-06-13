@@ -7,4 +7,3 @@ title: Jekyll Markdown测试
 ####加油，
 ###加油，
 ##加油！
-{{ page.date | date_to_string }}
