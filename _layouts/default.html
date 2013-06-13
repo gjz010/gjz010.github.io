@@ -91,6 +91,12 @@ var jiathis_config={
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 						</li>
 						<li>
+							<h2>最新文章</h2>
+{% for post in site.related_posts %}
+<li><a href={{post.url}}>{{post.title}}</a></li>
+{% endfor %}
+						</li>
+						<li>
 							<h2>标签一览</h2>
 <li><a href="/allposts.html">所有文章</a></li>
 {% for tag in site.tags %}
