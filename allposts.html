@@ -2,11 +2,16 @@
 layout: default
 title: 所有文章
 ---
-<ul>
+<div id="content">
   {% for post in site.posts %}
-    <li>
-      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-      <p>{{ post.excerpt }}</p>
-    </li>
+  <div class="post">
+  <a href="{{ post.url }}">
+      <h1 class="title">{{ post.title }}</h1>
+      <p class="byline"><small>发布于 {{ page.date }}</small></p>
+  					<div class="entry">
+            <p>{{ post.excerpt }}</p>
+            </div>
+<p class="meta"><a href="#" class="more">阅读全文</a></p>
+</div>
   {% endfor %}
-</ul>
+</div>
