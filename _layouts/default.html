@@ -93,7 +93,7 @@ var jiathis_config={
 						<li>
 							<h2>标签一览</h2>
 {% for tag in site.tags %}
-<a href="/#"+{{tag[0]}}><p>{{tag[0]}}</p></a>
+<li><a href="/#"+{{tag[0]}}>{{tag[0]}}</a></li>
 {% endfor %}
 						</li>
 					</ul>
