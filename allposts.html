@@ -5,13 +5,12 @@ title: 所有文章
 <div id="content">
   {% for post in site.posts %}
   <div class="post">
-  <a href="{{ post.url }}">
       <h1 class="title">{{ post.title }}</h1>
       <p class="byline"><small>发布于 {{ post.date }}</small></p>
   					<div class="entry">
             <p>{{ post.excerpt }}</p>
             </div>
-<p class="meta"><a href="#" class="more">阅读全文</a></p>
+<p class="meta"><a href="{{ post.url }}" class="more">阅读全文</a></p>
 </div>
   {% endfor %}
 </div>
