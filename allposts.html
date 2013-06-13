@@ -6,7 +6,7 @@ title: 所有文章
   {% for post in site.posts %}
   <div class="post">
       <h1 class="title">{{ post.title }}</h1>
-      <p class="byline"><small>发布于 {{ post.date }}</small></p>
+      <p class="byline"><small>发布于 {{ page.date | date_to_string }}</small></p>
   					<div class="entry">
             <p>{{ post.excerpt }}</p>
             </div>
