@@ -10,12 +10,10 @@ title: 主页
   <div class="post">
       <h1 class="title">{{ post.title }}</h1>
       <p class="byline"><small>发布于 {{ page.date | date_to_string }}</small></p>
-<!--
---    				<div class="entry">
---            <p>{{ post.excerpt }}</p>
---            </div>
--->
-<p class="meta"><a href="{{ post.url }}" class="more">阅读文章</a>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;标签:{{ post.tags }}</p>
+    				<div class="entry">
+            <p>{{ post.excerpt }}</p>
+            </div>
+<p class="meta"><a href="{{ post.url }}" class="more">阅读全文</a>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;标签:{{ post.tags }}</p>
 </div>
 {% endfor %}
 {% endfor %}

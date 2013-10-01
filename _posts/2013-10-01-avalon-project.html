@@ -1,0 +1,27 @@
+---
+layout: default
+title: Avalon工程预想
+tags: minecraft,c++
+---
+<script type="text/javascript" src="pdfobject.js"></script>
+
+<h2>原文档</h2>
+<p><a href=https://github.com/pa001024>@pa001024</a>君的宏伟计划，Nekocraft的四期工程，是对MC服务器的大型重写。<br><a href="https://github.com/Nekocraft/TODO/issues/21">https://github.com/Nekocraft/TODO/issues/21</a>
+</p>
+<h2>框架图</h2>
+  <script type="text/javascript">
+      var myPDF = new PDFObject({ url: "/docs/avalon.pdf" }).embed();
+  </script>
+    <p><a href="/docs/avalon.pdf">单击此处下载</a></p>
+<h2>进度</h2>
+<ul>
+<li>AvalonSE与AvalonCE基本框架实现。</li>
+<li>AvalonActor与AvalonWorker基本框架实现。</li>
+<li>MC基本逻辑（Quartz与ScriptSE）实现。</li>
+<li>ChunkFS实现（在此之前使用FakeChunk临时项目，即单调平坦的不保存的临时地图）。</li>
+<li>AvalonMQ实现。</li>
+<li>SCTP与Avalon协议实现，并用其封装MC协议（譬如特定封包头+剩余长度+MC原封包）。
+目前进度：<strong>0%(Planning)</strong>
+Edit By <a href="http://mahua.jser.me">MaHua</a></li>
+</ul>
+<a href=https://github.com/pa001024>@pa001024</a>君加油，我只能帮你到这里了TAT

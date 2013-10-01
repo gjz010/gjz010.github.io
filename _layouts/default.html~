@@ -1,13 +1,121 @@
-<!DOCTYPE html>
-<html>
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Personal Description: A two-column, fixed-width design.
+Version    : 1.0
+Released   : 20080513
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-　　<meta http-equiv="content-type" content="text/html; charset=utf-8" 
-/>
-　　<title>{{ page.title }}</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="baidu-site-verification" content="4xOqDNb4vD" />
+<title>gjz010的博客---{{ page.title }}</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="/style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
-<a href="/">回到主页</a>
-{{ content }}
+<a href="https://github.com/gjz010/gjz010.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/camo.github.com/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
+<!-- start header -->
+<div id="header">
+	<a href="/"><h1>gjz010的博客 </h1></a>
+	<p> 各种乱七八糟的东西</p>
+	<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_32x32">
+<a class="jiathis_button_qzone"></a>
+<a class="jiathis_button_tsina"></a>
+<a class="jiathis_button_tqq"></a>
+<a class="jiathis_button_tieba"></a>
+<a class="jiathis_button_ishare"></a>
+<a class="jiathis_button_baidu"></a>
+<a class="jiathis_button_qq"></a>
+<a class="jiathis_button_hi"></a>
+<a class="jiathis_button_translate"></a>
+<a class="jiathis_button_fb"></a>
+<a class="jiathis_button_twitter"></a>
+<a class="jiathis_button_googleplus"></a>
+<a class="jiathis_button_copy"></a>
+<a class="jiathis_button_print"></a>
+<a class="jiathis_button_fav"></a>
+<a class="jiathis_button_email"></a>
+<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+	summary:"",
+	hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+</div>
+<!-- end header -->
+<!-- start page -->
+<div id="wrapper">
+	<div id="page">
+				<!-- start content -->
+				<div id="content">
+					<div class="post">
+					<h2>{{ page.title }}</h2>
+                                        <p>{{ content }}</p>
+                                        <p>{{ page.date | date_to_string }}</p>
+					</div>
+				</div>
+				<!-- end content -->
+				<!-- start sidebar -->
+				<div id="sidebar">
+				<div class="wrap">
+				<div class="top">
+				<div class="btm">
+					<ul>
+						<li>
+							<h2>留言板</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'gjz010'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+						</li>
+						<li>
+							<h2>最新文章</h2>
+{% for post in site.related_posts %}
+<li><a href={{post.url}}>{{post.title}}</a></li>
+{% endfor %}
+						</li>
+						<li>
+							<h2>标签一览</h2>
+<li><a href="/allposts.html">所有文章</a></li>
+{% for tag in site.tags %}
+<li><a href="/#{{tag[0]}}">{{tag[0]}}</a></li>
+{% endfor %}
+						</li>
+					</ul>
+				</div>
+				</div>
+				</div>
+				</div>
+				<!-- end sidebar -->
+				<div style="clear:both">&nbsp;</div>
+	</div>
+</div>
+<div id="footer">
+	<p>&copy;2013 All Rights Reserved gjz010的博客 &nbsp;&bull;&nbsp; Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a> &nbsp;&bull;&nbsp; Icons by <a href="http://www.famfamfam.com/">FAMFAMFAM</a>.</p>
+</div>
 </body>
 </html>
 
